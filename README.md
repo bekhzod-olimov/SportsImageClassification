@@ -21,7 +21,7 @@ conda activate speed
 
 3. Data Visualization
 
-![image](https://github.com/bekhzod-olimov/SportsBallClassification/assets/50166164/cc6e4e03-3487-41c9-b6d5-94b59d4630d4)
+![image](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/6035063c-e7dd-4fd5-a388-8a9251d2de05)
 
 4. Train the AI model using the following script:
 ```python

@@ -7,7 +7,7 @@ This repository contains a deep learning (DL)-based artificial intelligence (AI)
 1. Clone the repo to your local machine using terminal via the following script:
 
 ```python
-git clone https://github.com/bekhzod-olimov/JellyfishClassifier.git
+git clone https://github.com/bekhzod-olimov/SportsImageClassification.git
 ```
 
 2. Create conda environment from yml file using the following script:
@@ -37,7 +37,7 @@ The training process progress:
 
 5. Learning curves:
    
-Use [DrawLearningCurves](https://github.com/bekhzod-olimov/JellyfishClassifier/blob/80393cea3cdf497533f915d88481a3513b6cbcf7/main.py#L56C6-L56C6) class to plot and save learning curves.
+Use [DrawLearningCurves](https://github.com/bekhzod-olimov/SportsImageClassification/blob/266aa4f15aef5ea5887e228c1b85ab7c4627047f/main.py#L56) class to plot and save learning curves.
 
 * Train and validation loss curves:
   

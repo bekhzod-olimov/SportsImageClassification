@@ -29,7 +29,7 @@ python main.py --root PATH_TO_THE_DATA --batch_size = 64 device = "cuda:0"
 ```
 The training parameters can be changed using the following information:
 
-![image](https://github.com/bekhzod-olimov/SportsBallClassification/assets/50166164/41a3b906-9ee0-4a12-b4c0-3262841c7861)
+![image](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/807af4f1-a7f3-410a-8bff-89c2984c9b27)
 
 The training process progress:
 

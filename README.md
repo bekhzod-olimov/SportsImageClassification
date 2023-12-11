@@ -41,11 +41,11 @@ Use [DrawLearningCurves](https://github.com/bekhzod-olimov/SportsImageClassifica
 
 * Train and validation loss curves:
   
-![loss_learning_curves](https://github.com/bekhzod-olimov/SportsBallClassification/assets/50166164/16db0e9d-dd69-40c4-83d9-199038e3b542)
+![loss_learning_curves](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/f1d20ff2-62bf-4514-af00-e5b5a225f57a)
 
 * Train and validation accuracy curves:
   
-![acc_learning_curves](https://github.com/bekhzod-olimov/SportsBallClassification/assets/50166164/fed231d0-4c8b-4398-ae3c-2d59a4421d51)
+![acc_learning_curves](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/ca0b9c2f-94cf-4d1e-bb53-c39d9aeb335b)
 
 6. Conduct inference using the trained model:
 ```python

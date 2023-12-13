@@ -51,7 +51,7 @@ def run(args):
     m, epochs, device, loss_fn, optimizer = train_setup(model_name = args.model_name, epochs = args.epochs, classes = classes, device = args.device)
     results = train(tr_dl = tr_dl, val_dl = val_dl, m = m, device = args.device, 
                     loss_fn = loss_fn, optimizer = optimizer, epochs = args.epochs, 
-                    save_dir = "saved_models", save_prefix = "brain")
+                    save_dir = "saved_models", save_prefix = f"{args.root.split('/')[-2]}")
     
     DrawLearningCurves(results, args.stats_dir).save_learning_curves()
     

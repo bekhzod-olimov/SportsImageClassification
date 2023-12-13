@@ -54,8 +54,8 @@ python inference.py --root PATH_TO_THE_DATA --batch_size = 64 device = "cuda:0"
 
 The inference progress:
 
-![image](https://github.com/bekhzod-olimov/JellyfishClassifier/assets/50166164/8fee0d75-c43c-4b85-9fcd-9a285a4cdf4a)
+![image](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/1562bbbf-0811-4ef9-9b17-47044c1299c7)
 
 7. Inference Results (Predictions):
 
-![brain_preds](https://github.com/bekhzod-olimov/SportsBallClassification/assets/50166164/7a8ffd57-4f66-4383-a5f5-06d032dbc27f)
+

@@ -20,6 +20,18 @@ class CustomDataset(Dataset):
     """
     
     def __init__(self, root, data, transformations = None):
+
+        """
+
+        This function gets several parameters and initiates the class.
+
+        Parameters:
+
+            root             - path to data, str;
+            data             - data name, str;
+            transformations  - transformations to be applied, transforms object.
+        
+        """
         
         self.transformations, self.data, self.root = transformations, data, root
         

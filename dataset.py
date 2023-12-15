@@ -8,6 +8,17 @@ torch.manual_seed(2023)
 
 class CustomDataset(Dataset):
     
+    """
+
+    This class gets several parameters and returns dataset to train an AI model.
+
+    Parameters:
+
+        root             - path to data, str;
+        transformations  - transformations to be applied, torchvision object.    
+    
+    """
+    
     def __init__(self, root, data, transformations = None):
         
         self.transformations, self.data, self.root = transformations, data, root

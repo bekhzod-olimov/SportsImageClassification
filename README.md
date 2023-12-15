@@ -61,7 +61,5 @@ The inference progress:
 ![sports_preds](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/317e28a8-1e85-447d-8ed4-f3b41c880ca7)
 
 8. Inference Results (GradCAM):
-
    
-
-
+![sports_gradcam](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/b3007af6-4880-48b4-b490-6462a545402f)

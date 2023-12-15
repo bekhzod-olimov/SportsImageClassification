@@ -24,8 +24,11 @@ conda activate speed
 ![image](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/6035063c-e7dd-4fd5-a388-8a9251d2de05)
 
 4. Train the AI model using the following script:
+
+a) PyTorch training:
+
 ```python
-python main.py --root PATH_TO_THE_DATA --batch_size = 64 device = "cuda:0"
+python main.py --root PATH_TO_THE_DATA --batch_size = 64 device = "cuda:0" --train_framework "py"
 ```
 The training parameters can be changed using the following information:
 
@@ -34,6 +37,12 @@ The training parameters can be changed using the following information:
 The training process progress:
 
 ![image](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/7a142c81-9f78-4348-a1ff-8efc5d01e7b9)
+
+b) PyTorch Lightning training:
+
+```python
+python main.py --root PATH_TO_THE_DATA --batch_size = 64 device = "cuda:0" --train_framework "pl"
+```
 
 5. Learning curves:
    

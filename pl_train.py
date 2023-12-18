@@ -79,6 +79,22 @@ class CustomModel(pl.LightningModule):
         
         return loss
     
+#     def test_step(self, batch, batch_idx):
+        
+#         ims, gts = batch
+#         preds = self.model(ims)
+        
+#         loss = self.ce_loss(preds, gts)
+        
+#         # Train metrics
+#         pred_clss = torch.argmax(preds, dim = 1)
+#         acc = self.accuracy(pred_clss, gts)
+#         f1 = self.f1(pred_clss, gts)
+        
+#         self.log("test_loss", loss, on_step = False, on_epoch = True, logger = True, sync_dist = True)
+#         self.log("test_acc", acc, on_step = False, on_epoch = True, logger = True, sync_dist = True)
+#         self.log("test_f1", f1, on_step = False, on_epoch = True, logger = True, sync_dist = True)
+            
 class ImagePredictionLogger(Callback):
     
     def __init__(self, val_samples, cls_names = None, num_samples = 8):

@@ -34,9 +34,11 @@ def run(args):
     state_dict = f"{args.save_model_path}/{args.dataset_name}_best_model.pth"
     model.load_state_dict(torch.load(state_dict, map_location = "cpu"), strict = True)
     print(f"The {args.model_name} state dictionary is successfully loaded!\n")
-    all_ims, all_preds, all_gts = get_preds(model, test_dl, args.device)
+    # all_ims, all_preds, all_gts = get_preds(model, test_dl, args.device)
+    all_ims, all_preds = get_preds(model, test_dl, args.device)
     
-    visualize(all_ims, all_preds, all_gts, num_ims = 10, rows = 2, cls_names = cls_names, save_path = args.save_path, save_name = args.dataset_name)
+    # visualize(all_ims, all_preds, all_gts, num_ims = 10, rows = 2, cls_names = cls_names, save_path = args.save_path, save_name = args.dataset_name)
+    visualize(all_ims, all_preds, num_ims = 10, rows = 2, cls_names = cls_names, save_path = args.save_path, save_name = args.dataset_name)
     grad_cam(model, all_ims, num_ims = 10, rows = 2, save_path = args.save_path, save_name = args.dataset_name)
     
 if __name__ == "__main__":

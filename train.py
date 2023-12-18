@@ -9,7 +9,7 @@ def to_device(batch, device): return batch[0].to(device), batch[1].to(device)
 
 def get_metrics(model, ims, gts, loss_fn, epoch_loss, epoch_acc): preds = model(ims); loss = loss_fn(preds, gts); return loss, epoch_loss + (loss.item()), epoch_acc + (torch.argmax(preds, dim = 1) == gts).sum().item()
 
-def train(tr_dl, val_dl, m, device, loss_fn, optimizer, epochs, threshold = 0.01, save_dir = "saved_models", save_prefix = "med"):
+def train(tr_dl, val_dl, m, device, loss_fn, optimizer, epochs, threshold = 0.01, save_dir = "saved_models", save_prefix = "med", train_framework = "py"):
     print("Start training...")
     learning_curves, tr_losses, val_losses, tr_accs, val_accs = {}, [], [], [], []
     best_loss = float(torch.inf)
@@ -56,7 +56,7 @@ def train(tr_dl, val_dl, m, device, loss_fn, optimizer, epochs, threshold = 0.01
             if val_loss_to_track < (best_loss + threshold):
                 os.makedirs(save_dir, exist_ok = True)
                 best_loss = val_loss_to_track
-                torch.save(m.state_dict(), f"{save_dir}/{save_prefix}_best_model.pth")
+                torch.save(m.state_dict(), f"{save_dir}/{save_prefix}_best_model_{train_framework}.pth")
                 
     learning_curves["tr_losses"] = tr_losses; learning_curves["val_losses"] = val_losses; learning_curves["tr_accs"] = tr_accs; learning_curves["val_accs"] = val_accs
     

@@ -72,3 +72,12 @@ The inference progress:
 8. Inference Results (GradCAM):
    
 ![sports_gradcam](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/b3007af6-4880-48b4-b490-6462a545402f)
+
+9. Run Demo
+
+```python
+streamlit run demo.py
+```
+
+10. [Demo](http://218.38.14.20:8502/): 
+![image](https://github.com/bekhzod-olimov/Fruits-Classifier/assets/50166164/bb81d826-7b18-43cf-a670-3710621c0cd9)

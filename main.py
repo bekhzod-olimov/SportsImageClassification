@@ -54,7 +54,7 @@ def run(args):
     
     if args.train_framework == "pl":
         
-        ckpt_name = f"{data_name}_best_model_{args.model_name}_{args.train_framework}.ckpt"
+        ckpt_name = f"{data_name}_best_model_{args.model_name}_{args.train_framework}"
         # Samples required by the custom ImagePredictionLogger callback to log image predictions. 
         val_samples = next(iter(val_dl))
 

@@ -70,6 +70,13 @@ def get_dls(root, transformations, bs, split = [0.9, 0.05], ns = 4):
         bs               - mini batch size, int;
         split            - split ratio, list -> float;
         ns               - number of workers, int.  
+
+    Outputs:
+
+        tr_dl            - train dataloader, torch dataloader object;
+        val_dl           - validation dataloader, torch dataloader object;
+        ts_dl            - test dataloader, torch dataloader object;
+        cls_names        - class names of the dataset, dict
     
     """
 

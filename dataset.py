@@ -58,6 +58,20 @@ class CustomDataset(Dataset):
         return im, gt if self.data == "train" else im
     
 def get_dls(root, transformations, bs, split = [0.9, 0.05], ns = 4):
+
+    """
+
+    This function gets several parameters and returns dataloaders and a class names file.
+
+    Parameters:
+
+        root             - path to data
+        transformations  - 
+
+        
+    
+    
+    """
     
     tr_ds = CustomDataset(root = root, data = "train", transformations = transformations)
     cls_names = tr_ds.cls_names

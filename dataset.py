@@ -65,21 +65,26 @@ def get_dls(root, transformations, bs, split = [0.9, 0.05], ns = 4):
 
     Parameters:
 
-        root             - path to data
-        transformations  - 
-
-        
-    
+        root             - path to data, str;
+        transformations  - transformations to be applied, transforms object;
+        bs               - mini batch size, int;
+        split            - split ratio, list -> float;
+        ns               - number of workers, int.  
     
     """
-    
+
+    # Get train dataset
     tr_ds = CustomDataset(root = root, data = "train", transformations = transformations)
+    # Get class names
     cls_names = tr_ds.cls_names
+    # Get test dataset
     ts_ds = CustomDataset(root = root, data = "test", transformations = transformations)
-    
+
+    # Split the data
     all_len = len(tr_ds); tr_len = int(all_len * split[0]); val_len = all_len - tr_len
     tr_ds, val_ds = random_split(dataset = tr_ds, lengths = [tr_len, val_len])
-    
+
+    # Get train, validation, and test dataloaders
     tr_dl, val_dl, ts_dl = DataLoader(tr_ds, batch_size = bs, shuffle = True, num_workers = ns), DataLoader(val_ds, batch_size = bs, shuffle = False, num_workers = ns), DataLoader(ts_ds, batch_size = 1, shuffle = False, num_workers = ns)
     
     return tr_dl, val_dl, ts_dl, cls_names

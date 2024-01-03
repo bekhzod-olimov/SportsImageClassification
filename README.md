@@ -22,6 +22,29 @@ Then activate the environment using the following command:
 conda activate speed
 ```
 
+b) Create a virtual environment using txt file:
+
+- Create a virtual environment:
+
+```python
+conda create -n speed python=3.9
+```
+
+- Activate the environment using the following command:
+
+```python
+conda activate speed
+```
+
+- Create a virtual environment:
+
+```python
+conda create -n speed python=3.9
+```
+
+
+
+
 3. Data Visualization
 
 ![image](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/6035063c-e7dd-4fd5-a388-8a9251d2de05)

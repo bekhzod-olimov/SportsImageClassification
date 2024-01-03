@@ -17,6 +17,7 @@ a) Create a virtual environment using yml file:
 ```python
 conda env create -f environment.yml
 ```
+
 Then activate the environment using the following command:
 ```python
 conda activate speed
@@ -36,14 +37,11 @@ conda create -n speed python=3.9
 conda activate speed
 ```
 
-- Create a virtual environment:
+- Install libraries from the text file:
 
 ```python
-conda create -n speed python=3.9
+pip install -r requirements.txt
 ```
-
-
-
 
 3. Data Visualization
 

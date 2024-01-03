@@ -11,6 +11,9 @@ git clone https://github.com/bekhzod-olimov/SportsImageClassification.git
 ```
 
 2. Create conda environment from yml file using the following script:
+
+a) Create a virtual environment using yml file:
+
 ```python
 conda env create -f environment.yml
 ```

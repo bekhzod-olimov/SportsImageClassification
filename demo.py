@@ -75,7 +75,12 @@ def predict(m, path, tfs, cls_names):
 
     This function gets several parameters and returns an original image and the corresponding predicted class by the AI model.
 
-    
+    Parameters:
+
+        m           - a pretrained AI model, timm object;
+        path        - path to an image, str;
+        tfs         - transformations to be applied, transforms object;
+        cls_names   - class names from the pretrained dataset, list/dict. 
     
     """
     

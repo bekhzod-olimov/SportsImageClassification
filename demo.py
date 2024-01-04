@@ -1,6 +1,5 @@
 # Import libraries
-import torch, pickle, timm, argparse
-import streamlit as st
+import torch, pickle, timm, argparse, streamlit as st
 from transformations import get_tfs  
 from PIL import Image, ImageFont
 from utils import get_state_dict
@@ -33,11 +32,14 @@ def run(args):
     
     # Load classification model
     m = load_model(args.model_name, num_classes, args.checkpoint_path)
+    
+    # Set title and decorate streamlit page
     st.title("Fruit Classifier")
-    file = st.file_uploader('Please upload your image')
+    file = st.file_uploader("Please upload your image")
 
     # Get image and predicted class
     im, result = predict(m = m, path = file, tfs = transformations, cls_names = cls_names) if file else predict(m = m, path = default_path, tfs = transformations, cls_names = cls_names)
+    # Write on the streamlit page
     st.write(f"INPUT IMAGE: "); st.image(im); st.write(f"PREDICTED AS -> {result.upper()}")
         
 # @st.cache_data

@@ -12,18 +12,7 @@ git clone https://github.com/bekhzod-olimov/SportsImageClassification.git
 
 2. Create conda environment from yml file using the following script:
 
-a) Create a virtual environment using yml file:
-
-```python
-conda env create -f environment.yml
-```
-
-Then activate the environment using the following command:
-```python
-conda activate speed
-```
-
-b) Create a virtual environment using txt file:
+a) Create a virtual environment using txt file:
 
 - Create a virtual environment:
 
@@ -41,6 +30,17 @@ conda activate speed
 
 ```python
 pip install -r requirements.txt
+```
+
+b) Create a virtual environment using yml file:
+
+```python
+conda env create -f environment.yml
+```
+
+Then activate the environment using the following command:
+```python
+conda activate speed
 ```
 
 3. Data Visualization

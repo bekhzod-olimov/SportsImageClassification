@@ -61,12 +61,23 @@ def load_model(model_name, num_classes, checkpoint_path):
     
     """
     
+    # Load an AI model
     m = timm.create_model(model_name, num_classes = num_classes)
+    # Load the pretrained trainable parameters for the model
     m.load_state_dict(get_state_dict(args.checkpoint_path))
     
+    # Change to evaluation model and return the model
     return m.eval()
 
 def predict(m, path, tfs, cls_names):
+
+    """
+
+    This function gets several parameters and returns an original image and the corresponding predicted class by the AI model.
+
+    
+    
+    """
     
     im = Image.open(path).convert("RGB")
     cls_names = list(cls_names.keys()) if isinstance(cls_names, dict) else cls_names

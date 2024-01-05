@@ -96,7 +96,8 @@ if __name__ == "__main__":
     
     # Add arguments
     parser.add_argument("-mn", "--model_name", type = str, default = "rexnet_150", help = "Model name for backbone")
-    parser.add_argument("-cp", "--checkpoint_path", type = str, default = "path/to/checkpoint/", help = "Path to the checkpoint")
+    # parser.add_argument("-cp", "--checkpoint_path", type = str, default = "path/to/checkpoint/", help = "Path to the checkpoint")
+    parser.add_argument("-cp", "--checkpoint_path", type = str, default = "./saved_models/sports_best_model_rexnet_150_pl.ckpt", help = "Path to the checkpoint")
     
     # Parse the arguments
     args = parser.parse_args() 

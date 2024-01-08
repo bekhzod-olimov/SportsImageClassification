@@ -1,14 +1,12 @@
-import torch, random, numpy as np
+import cv2, torch, random, numpy as np
 from collections import OrderedDict as OD
-from time import time
 from matplotlib import pyplot as plt
 from pytorch_grad_cam import GradCAM
 from pytorch_grad_cam.utils.image import show_cam_on_image
-import cv2
-from tqdm import tqdm
+from tqdm import tqdm; from time import time
 from torchvision import transforms as T
 
-
+# Inverse transformations
 inv_fn = T.Compose([ T.Normalize(mean = [ 0., 0., 0. ],
                                                      std = [ 1/0.229, 1/0.224, 1/0.225 ]),
                                 T.Normalize(mean = [ -0.485, -0.456, -0.406 ],

@@ -104,4 +104,4 @@ streamlit run demo.py
 ```
 
 10. [Demo](http://218.38.14.21:8501/): 
-![image](https://github.com/bekhzod-olimov/Fruits-Classifier/assets/50166164/bb81d826-7b18-43cf-a670-3710621c0cd9)
+![image](https://github.com/bekhzod-olimov/SportsImageClassification/assets/50166164/5c04c5ef-5f2f-4c42-8aa8-b5ebe295eeed)

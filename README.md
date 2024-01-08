@@ -103,5 +103,5 @@ The inference progress:
 streamlit run demo.py
 ```
 
-10. [Demo](http://114.110.135.163:8501): 
+10. [Demo](http://218.38.14.21:8501/): 
 ![image](https://github.com/bekhzod-olimov/Fruits-Classifier/assets/50166164/bb81d826-7b18-43cf-a670-3710621c0cd9)
